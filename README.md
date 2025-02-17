@@ -1,16 +1,24 @@
-# Practice
+# Sound project
 
-This project contains files to create a simple **research compendium** as 
-presented in the training course 
-[Reproducible Research in Computational Ecology](https://rdatatoolbox.github.io).
-
+This project aims at testing if **pollinator sounds** impact the emission of 
+volatile odour compounds in _Brassica rapa_.
 
 ## Content
 
 This project is structured as follow:
     
-- `README.md`: presentation of the project
-- `compendium.Rproj`: RStudio project file
+.
+├─ README.md                                  # Presentation of the project
+├─ DESCRIPTION                                # Project metadata
+├─ LICENSE.md                                 # License of the project
+|
+├─ R/                                         # Contains R functions (only)
+|
+├─ analyses/                                  # Contains R scripts
+|  └─ pipeline.R                              # analyses pipeline with targets
+|
+└─ make.R                                     # Script to setup & run the project
+
 
 
 ## Installation
@@ -25,4 +33,4 @@ Coming soon...
 
 ## Citation
 
-> Doe J (2024) Minimal structure of a research compendium.
+Coming soon...

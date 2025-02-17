@@ -1,6 +1,6 @@
 Package: sound_project
-Type: Package
-Title: The Title of the Project
+Type: Analyses
+Title: Sound Effect on COVs
 Version: 0.0.0.9000
 Authors@R: c(
     person(given   = "Estelle",
