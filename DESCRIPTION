@@ -1,0 +1,14 @@
+Package: sound_project
+Type: Package
+Title: The Title of the Project
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given   = "Estelle",
+           family  = "Barbot",
+           role    = c("aut", "cre", "cph"),
+           email   = "estelle.barbot@protonmail.com",
+           comment = c(ORCID = "0000-0001-6790-2429")))
+Description: A paragraph providing a full description of the project (on 
+                                                                      several lines...)
+License: GPL-2
+Encoding: UTF-8
