@@ -1,12 +1,10 @@
 # Sound project
 
-This project aims at testing if **pollinator sounds** impact the emission of 
-volatile odour compounds in _Brassica rapa_.
+The aim of this project is to test whether **pollinator sounds** affect the emission of volatile odours in _Brassica rapa_.
 
 ## Content
 
 This project is structured as follow:
- 
 
 ```   
 .
