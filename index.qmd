@@ -2,10 +2,12 @@
 title: "Sound Project"
 format: html
 editor: visual
-css: styles/styles.css
-bibliography: references.bib
-csl: styles/proceedings-of-the-royal-society-b.csl
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## Purpose of the project
 
+```{r,echo=FALSE}
+targets::tar_visnetwork()
+```

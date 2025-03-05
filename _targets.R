@@ -17,13 +17,16 @@ source(here::here("R", "manage_data.R"))
 
 list(
   
-  ## Read data and create meta ----
+  ## Manage data ----
   
   tar_target(h5_Rdata,
-             read_h5_Rdata("data/imported_h5_files/all_ttt_h5.RData"))
+             load_h5_data("data/imported_h5_files/all_ttt_h5.RData")),
   
-  # tar_target(meta_file,create_meta(h5_Rdata))
+  tar_target(meta_file,create_meta(h5_Rdata)),
   
+  ## Quarto ----
+  
+  tarchetypes::tar_quarto(index, "index.qmd") 
   
 )
 

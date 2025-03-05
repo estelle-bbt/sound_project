@@ -19,8 +19,7 @@ This project is structured as follow:
 |
 ├─ R/                                         # Contains R functions (only)
 |
-├─ analyses/                                  # Contains R scripts
-|  └─ pipeline.R                              # Analyses pipeline with targets
+├─ _targets.R                                 # Analyses pipeline
 |
 └─ make.R                                     # Script to setup & run the project
 ```
