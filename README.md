@@ -1,16 +1,17 @@
 # Sound project
 
-The aim of this project is to test whether **pollinator sounds** affect the emission of volatile odours in _Brassica rapa_.
+The aim of this project is to test whether **pollinator sounds** affect the emission of volatile odours in *Brassica rapa*.
 
 ## Content
 
 This project is structured as follow:
 
-```   
+```         
 .
 ├─ README.md                                  # Presentation of the project
 ├─ DESCRIPTION                                # Project metadata
 ├─ LICENSE.md                                 # License of the project
+├─ index.qmd                                  # Quarto 
 |
 ├─ data/                                      # Contains raw data
 |  ├─ imported_h5_files/                      # h5 files imported with provoc
@@ -19,25 +20,21 @@ This project is structured as follow:
 ├─ R/                                         # Contains R functions (only)
 |
 ├─ analyses/                                  # Contains R scripts
-|  └─ pipeline.R                              # analyses pipeline with targets
+|  └─ pipeline.R                              # Analyses pipeline with targets
 |
 └─ make.R                                     # Script to setup & run the project
-
 ```
 
-> [!NOTE]  
-> The folder **data/** is not present in this repository (listed in the `.gitignore`) 
-> but we provide the .Rdata on demand.
+> [!NOTE]\
+> The folder **data/** is not present in this repository (listed in the `.gitignore`) but we provide the .Rdata on demand.
 
 ## Installation
 
 Coming soon...
 
-
 ## Usage
 
 Coming soon...
-
 
 ## Citation
 

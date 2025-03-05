@@ -12,3 +12,8 @@ Description: A paragraph providing a full description of the project (on
                                                                       several lines...)
 License: GPL-2
 Encoding: UTF-8
+Remotes:
+    JHuguenin/provoc
+Imports: 
+    here,
+    provoc
