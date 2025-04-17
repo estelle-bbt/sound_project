@@ -8,6 +8,46 @@ editor_options:
 
 ## Purpose of the project
 
+Visualize the pipeline analyses:
+
 ```{r,echo=FALSE}
 targets::tar_visnetwork()
+```
+
+Total of 1655 mass.
+
+Visualize the plot with summarized data per treatment (sum of all mass):
+
+```{r,warnings=FALSE}
+targets::tar_load(plot_summarized_data)
+
+plot_summarized_data
+```
+
+And then for each mass:
+
+```{r,warnings=FALSE}
+
+# plots_list <- targets::tar_read(plot_summarized_data_per_mass)
+#   
+# selected_plots <- plots_list
+
+# selected_plots <- plots_list[c("61.993","78.98","183.35")]
+
+# selected_plots <- plots_list[grep("180.|181.|182.", names(plots_list))]
+
+# for (plot in selected_plots) {
+#   print(plot)  # Afficher chaque graphique
+# }
+
+```
+
+Results from model with continuous time on the sum of all mass:
+
+```{r,warnings=FALSE}
+targets::tar_load(model_comparison_time)
+
+model_comparison_time$result_anova
+
+model_comparison_time$result_summary
 ```

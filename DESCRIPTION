@@ -16,4 +16,7 @@ Remotes:
     JHuguenin/provoc
 Imports: 
     here,
-    provoc
+    provoc,
+    dplyr,
+    tibble,
+    stringr

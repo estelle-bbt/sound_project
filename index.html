@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,10 +103,105 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="purpose-of-the-project" class="level2">
 <h2 class="anchored" data-anchor-id="purpose-of-the-project">Purpose of the project</h2>
+<p>Visualize the pipeline analyses:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="visNetwork html-widget html-fill-item" id="htmlwidget-c73880392d47f399629f" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-c73880392d47f399629f">{"x":{"nodes":{"name":["h5_Rdata","index","meta_file","load_h5_data","create_meta"],"type":["stem","stem","stem","function","function"],"description":[null,null,null,null,null],"status":["uptodate","dispatched","uptodate","uptodate","uptodate"],"seconds":[17.024,2.548,0.184,null,null],"bytes":[2722448164,0,49,null,null],"branches":[null,null,null,null,null],"label":["h5_Rdata","index","meta_file","load_h5_data","create_meta"],"color":["#354823","#DC863B","#354823","#354823","#354823"],"id":["h5_Rdata","index","meta_file","load_h5_data","create_meta"],"level":[2,0,3,1,1],"shape":["dot","dot","dot","triangle","triangle"]},"edges":{"from":["create_meta","h5_Rdata","load_h5_data"],"to":["meta_file","meta_file","h5_Rdata"],"arrows":["to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":1,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Up to date","Dispatched","Stem","Function"],"color":["#354823","#DC863B","#899DA4","#899DA4"],"shape":["dot","dot","dot","triangle"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script>
+<div class="visNetwork html-widget html-fill-item" id="htmlwidget-d0faee08f607b172dd3d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d0faee08f607b172dd3d">{"x":{"nodes":{"name":["formatted_table","h5_Rdata","index","model_comparison_time","model_comparison_time_pval","modified_Rdata","phenot_data","plot_summarized_data","plot_summarized_data_per_mass","summarized_data","summarized_data_per_mass","get_plot_summarized_data","compare_before_after","model_compare_time_pval","summarize_data_per_mass","summarize_data","load_h5_data","load_phenotypes","format_peaks","create_meta","data_compare_before_after","plot_compare_before_after","modify_meta","get_plot_summarized_data_per_mass","model_compare_before_after","model_compare_time"],"type":["stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","stem","function","function","function","function","function","function","function","function","function","function","function","function","function","function","function"],"description":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"status":["uptodate","uptodate","dispatched","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate","uptodate"],"seconds":[14.403,15.799,3.345,7.012,147.438,0.029,0.001,0.005,17.08,0.094,102.162,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"bytes":[93737742,2722448210,35093,129590982,11089,2722448269,1675,113210,50244671,6235,9050776,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"label":["formatted_table","h5_Rdata","index","model_comparison_time","model_comparison_time_pval","modified_Rdata","phenot_data","plot_summarized_data","plot_summarized_data_per_mass","summarized_data","summarized_data_per_mass","get_plot_summarized_data","compare_before_after","model_compare_time_pval","summarize_data_per_mass","summarize_data","load_h5_data","load_phenotypes","format_peaks","create_meta","data_compare_before_after","plot_compare_before_after","modify_meta","get_plot_summarized_data_per_mass","model_compare_before_after","model_compare_time"],"color":["#354823","#354823","#DC863B","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823","#354823"],"id":["formatted_table","h5_Rdata","index","model_comparison_time","model_comparison_time_pval","modified_Rdata","phenot_data","plot_summarized_data","plot_summarized_data_per_mass","summarized_data","summarized_data_per_mass","get_plot_summarized_data","compare_before_after","model_compare_time_pval","summarize_data_per_mass","summarize_data","load_h5_data","load_phenotypes","format_peaks","create_meta","data_compare_before_after","plot_compare_before_after","modify_meta","get_plot_summarized_data_per_mass","model_compare_before_after","model_compare_time"],"level":[4,2,7,5,5,3,2,6,6,5,5,1,0,1,1,1,1,1,1,0,0,0,1,1,0,1],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle","triangle"]},"edges":{"from":["formatted_table","model_compare_time","load_phenotypes","load_h5_data","get_plot_summarized_data","summarized_data","h5_Rdata","modify_meta","formatted_table","model_compare_time_pval","get_plot_summarized_data_per_mass","summarized_data_per_mass","format_peaks","modified_Rdata","phenot_data","formatted_table","summarize_data","model_comparison_time","plot_summarized_data","formatted_table","summarize_data_per_mass"],"to":["model_comparison_time","model_comparison_time","phenot_data","h5_Rdata","plot_summarized_data","plot_summarized_data","modified_Rdata","modified_Rdata","model_comparison_time_pval","model_comparison_time_pval","plot_summarized_data_per_mass","plot_summarized_data_per_mass","formatted_table","formatted_table","formatted_table","summarized_data","summarized_data","index","index","summarized_data_per_mass","summarized_data_per_mass"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"interaction":{"zoomSpeed":1},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":1,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Up to date","Dispatched","Stem","Function"],"color":["#354823","#DC863B","#899DA4","#899DA4"],"shape":["dot","dot","dot","triangle"]},"nodesToDataframe":true},"tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Total of 1655 mass.</p>
+<p>Visualize the plot with summarized data per treatment (sum of all mass):</p>
+<div class="cell" data-warnings="false">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>targets<span class="sc">::</span><span class="fu">tar_load</span>(plot_summarized_data)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plot_summarized_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>And then for each mass:</p>
+<div class="cell" data-warnings="false">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plots_list &lt;- targets::tar_read(plot_summarized_data_per_mass)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#   </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># selected_plots &lt;- plots_list</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># selected_plots &lt;- plots_list[c("61.993","78.98","183.35")]</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># selected_plots &lt;- plots_list[grep("180.|181.|182.", names(plots_list))]</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># for (plot in selected_plots) {</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   print(plot)  # Afficher chaque graphique</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Results from model with continuous time on the sum of all mass:</p>
+<div class="cell" data-warnings="false">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>targets<span class="sc">::</span><span class="fu">tar_load</span>(model_comparison_time)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>model_comparison_time<span class="sc">$</span>result_anova</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: get(response)
+                 Chisq Df Pr(&gt;Chisq)    
+time            6.3741  1  0.0115795 *  
+treatment       1.8706  3  0.5996918    
+nb_flowers     28.2731  1  1.053e-07 ***
+time:treatment 18.4956  3  0.0003476 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>model_comparison_time<span class="sc">$</span>result_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: get(response) ~ time * treatment + nb_flowers + (1 | clean_names) +  
+    (1 | temporal_bloc)
+   Data: formatted_table_reduced
+
+REML criterion at convergence: 96065.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-10.9738  -0.0549  -0.0104   0.0373  28.6666 
+
+Random effects:
+ Groups        Name        Variance  Std.Dev.
+ clean_names   (Intercept) 1.171e+13 3421876 
+ temporal_bloc (Intercept) 0.000e+00       0 
+ Residual                  5.846e+12 2417815 
+Number of obs: 2964, groups:  clean_names, 228; temporal_bloc, 2
+
+Fixed effects:
+                    Estimate Std. Error         df t value Pr(&gt;|t|)    
+(Intercept)        1.601e+06  6.585e+05  3.140e+02   2.431 0.015623 *  
+time              -1.487e+04  2.374e+04  3.401e+18  -0.626 0.531124    
+treatmentFqB      -8.624e+05  7.490e+05  3.871e+02  -1.151 0.250290    
+treatmentFqM      -1.561e+06  7.565e+05  3.865e+02  -2.063 0.039758 *  
+treatmentFqP      -7.989e+05  7.515e+05  3.876e+02  -1.063 0.288440    
+nb_flowers         9.228e+04  1.735e+04  2.230e+02   5.317 2.55e-07 ***
+time:treatmentFqB  6.243e+04  3.343e+04  1.518e+19   1.868 0.061794 .  
+time:treatmentFqM  1.214e+05  3.372e+04  1.606e+19   3.601 0.000317 ***
+time:treatmentFqP -3.484e+03  3.357e+04  7.575e+18  -0.104 0.917331    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) time   trtmFB trtmFM trtmFP nb_flw tm:tFB tm:tFM
+time        -0.397                                                 
+treatmntFqB -0.528  0.349                                          
+treatmntFqM -0.514  0.345  0.503                                   
+treatmntFqP -0.536  0.347  0.504  0.500                            
+nb_flowers  -0.592  0.000 -0.072 -0.087 -0.056                     
+tm:trtmntFB  0.282 -0.710 -0.491 -0.245 -0.247  0.000              
+tm:trtmntFM  0.279 -0.704 -0.245 -0.490 -0.245  0.000  0.500       
+tm:trtmntFP  0.280 -0.707 -0.247 -0.244 -0.491  0.000  0.502  0.498
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')</code></pre>
 </div>
 </div>
 </section>
