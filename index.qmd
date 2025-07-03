@@ -42,7 +42,7 @@ And then for each mass:
 
 ```
 
-Results from model with continuous time on the sum of all mass:
+Results from model with continuous time on the sum of all mass (base = Blc) :
 
 ```{r,warnings=FALSE}
 targets::tar_load(model_comparison_time)
@@ -50,4 +50,24 @@ targets::tar_load(model_comparison_time)
 model_comparison_time$result_anova
 
 model_comparison_time$result_summary
+```
+
+Results from model with continuous time on the sum of all mass (base = FqB) :
+
+```{r,warnings=FALSE}
+targets::tar_load(model_comparison_time_fqb)
+
+model_comparison_time_fqb$result_anova
+
+model_comparison_time_fqb$result_summary
+```
+
+Results from model with continuous time on the sum of all mass (base = FqP) :
+
+```{r,warnings=FALSE}
+targets::tar_load(model_comparison_time_fqp)
+
+model_comparison_time_fqp$result_anova
+
+model_comparison_time_fqp$result_summary
 ```

@@ -14,12 +14,16 @@ data_comparison_before_after|stem|886568fc06f34f7d|40a5ab9f595f3c73|7f04608c2780
 plot_comparison_before_after|stem|b1838836cceb3fb4|e561d8e585c6ece3|e0eeec91961952fc|-1130841072||t20175.6688688741s|s143645b|143645|rds|local|vector|||0.005||
 plot_summarized_data_per_mass|stem|67d8e3efb4f5f417|cd4e5aea181bf5ea|977fba4d679303d3|115747287||t20175.6693322446s|s50244671b|50244671|rds|local|vector|||17.08||
 model_comparison_before_after|stem|ced138126ec962d0|871406bee1c8f929|fbafc7452e20c7fa|-314269541||t20175.6733575336s|s352b|352|rds|local|vector|||0.27||
-model_comparison_time|stem|d0aa7eab30d23a70|0dc9a7a854b73629|4a2876262aab43e4|-486132319||t20187.5625795181s|s129590982b|129590982|rds|local|vector|||7.012|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
 model_comparison_time_pval|stem|1bc166f99ff85f0d|3504fdab93e14653|a3507543814a6889|1806886656||t20187.5675419187s|s11089b|11089|rds|local|vector|||147.438|unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. Model failed to converge with 1 negative eigenvalue 5.2e00. Model failed to converge with maxgrad  0.00631736 tol  0.002, component 1. Model may not have converged with 1 eigenvalue close to zero 5.3e09. Model failed to converge with maxgrad  0.00234295 tol  0.002, component 1. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. Model failed to converge with maxgrad  0.00249493 tol  0.002, component 1. Model failed to converge with maxgrad  0.0873663 tol  0.002, component 1. Model failed to converge with maxgrad  0.00213395 tol  0.002, component 1. Model failed to converge with maxgrad  0.0172038 tol  0.002, component 1. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. Model failed to converge with 1 negative eigenvalue 5.9e00. unable to evaluate scaled gradient. Model failed to converge degenerate  Hessian with 1 negative eigenvalues. Model failed to converge with 1 negative eigenvalue 3.1e01. Model failed to converge with maxgrad  0.0956064 tol  0.002, component 1. Model failed to converge with maxgrad  0.0307529 tol  0.002, component 1. Model failed to converge with maxgrad  0.0108504 tol  0.002, component 1. Model failed to converge with maxgrad  0.0252474 tol  0.002,|
 meta_modified|stem|faa166b841fff880|f28f8b010c95dfba|5fcbc9938129296f|314173907||t20195.3997770107s|s5032b|5032|rds|local|vector|||0.093||
 Rdata_modified|stem|964671c0a77ba066|f28f8b010c95dfba|8a916e1e118eab88|413077527||t20195.4172715601s||2722449326|rds|local|vector|||0.055||Names cant be of the form ... or ..j. These names are invalid   ... at location 1.
 modified_Rdata|stem|f48a73e4fecf0790|f28f8b010c95dfba|168979277978f082|1503103931||t20195.435867826s|s2722448269b|2722448269|rds|local|vector|||0.029||
 formatted_table|stem|6603fc10c4937293|39fc25e113171bcd|ba4015186af15ba8|-1242691916||t20195.4372368902s|s93737742b|93737742|rds|local|vector|||14.403||
+model_comparison_time|stem|dff2f741f2e61f51|0dc9a7a854b73629|21f30c2bd9f1b702|-486132319||t20201.626268661s|s129590653b|129590653|rds|local|vector|||6.74|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
+model_comparison_time_blc|stem|994a7626a5cebb8e|9f2b98ae5255d7b4|3d26758a594701b2|384292956||t20201.6443706765s|s129590661b|129590661|rds|local|vector|||7.454|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
+model_comparison_time_fqb|stem|c53ba5c144782a1b|9c18524924392123|3d26758a594701b2|913530313||t20201.6470831023s|s129588912b|129588912|rds|local|vector|||7.536|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
+model_comparison_time_fqm|stem|55cdaa04fda39f6a|587150d9fe7cf861|3d26758a594701b2|-944887077||t20201.6471917341s|s129592388b|129592388|rds|local|vector|||5.445|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
+model_comparison_time_fqp|stem|55cdaa04fda39f6a|587150d9fe7cf861|3d26758a594701b2|-1456475569||t20201.6622289466s|s129592388b|129592388|rds|local|vector|||6.822|Model may not have converged with 1 eigenvalue close to zero 1.9e09. Model may not have converged with 1 eigenvalue close to zero 1.8e09|
 get_plot_summarized_data|function|40075fa8bf0ee17a
 compare_before_after|function|03fb04d11dd06eb1
 model_compare_time_pval|function|9d708e84a7147eea
@@ -27,7 +31,7 @@ summarize_data_per_mass|function|3fd144a0043c20c2
 summarize_data|function|53522d20f43e99ae
 load_h5_data|function|0cf90dac83fa3fad
 load_phenotypes|function|fb9fa0ef0799d77c
-.Random.seed|object|436c2045d79155d2
+.Random.seed|object|8be35efd2cfb29a1
 format_peaks|function|eb3ba2e04f0e44d8
 create_meta|function|5826572f20511920
 data_compare_before_after|function|a0b5e091bace913c
@@ -35,5 +39,5 @@ plot_compare_before_after|function|ba1ecf82c441b348
 modify_meta|function|fa95b86c556cc044
 get_plot_summarized_data_per_mass|function|81042826bad3e0e8
 model_compare_before_after|function|64e2843a152febde
-model_compare_time|function|33bb71e1a8066b5e
-index|stem|07e2d0765514bc47|c26a30e3d94e486b|a3173580028edd5c|554519753|index_files*index.html*index.qmd|t20195.4389543147s|s152292615b|152292615|file|local|vector|||5.468||
+model_compare_time|function|8c6dcc2bc2edbe94
+index|stem|b78fdf04997651af|730d95200a20cc5f|eeec0884570e7746|554519753|index_files*index.html*index.qmd|t20201.6623175558s|s45410b|45410|file|local|vector|||6.962||

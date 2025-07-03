@@ -445,10 +445,11 @@ plot_compare_before_after <- function(clean_table) {
 #' 
 
 
-model_compare_time <- function(formatted_table, response = "sum_peaks") {
+model_compare_time <- function(formatted_table, response = "sum_peaks", base = "Blc") {
   
   formatted_table_reduced <- formatted_table |>
-    dplyr::filter(time %in% c(5:17))
+    dplyr::filter(time %in% c(5:17)) |>
+    dplyr::mutate(treatment = forcats::fct_relevel(treatment, base))
   
   # mixed linear model
   model <- lmerTest::lmer(get(response) ~ time * treatment + nb_flowers + (1 | clean_names) + (1|temporal_bloc), data = formatted_table_reduced)

@@ -43,9 +43,13 @@ list(
   # 
   # tar_target(plot_comparison_before_after,plot_compare_before_after(data_comparison_before_after)),
   # 
-  tar_target(model_comparison_time,model_compare_time(formatted_table)),
+  tar_target(model_comparison_time_blc,model_compare_time(formatted_table, base = "Blc")),
+  
+  tar_target(model_comparison_time_fqb,model_compare_time(formatted_table, base = "FqB")),
+  
+  tar_target(model_comparison_time_fqp,model_compare_time(formatted_table, base = "FqP")),
 
-  tar_target(model_comparison_time_pval,model_compare_time_pval(formatted_table)),
+  # tar_target(model_comparison_time_pval,model_compare_time_pval(formatted_table)),
   
   ## Quarto ----
   
